@@ -39,39 +39,6 @@ public class idash {
         //System.out.println(Heuristic.heuristic(kups.get(0).getState(), goal, next_cubait));
         System.out.println("hehe");
         long start=System.currentTimeMillis();
-        /*
-        int heur=Heuristic.heuristic(ahmet, goal, next_cubait);
-        System.out.println(heur);
-            int omayra=0;
-        try{
-            FileReader read=new FileReader("./enk.txt");
-            LineNumberReader line=new LineNumberReader(read);
-            String s="";
-            int esanshil=0;
-            while((s=line.readLine())!=null){
-                int[] o=new int[20];
-                for(int i=0;i<o.length;i++){
-                    o[i]=Integer.parseInt(s.substring(i*3, i*3+3));
-                }
-                int heura=Heuristic.heuristic(ahmet, o, next_cubait);
-                if(heura<heur){
-                    heur=heura;
-                    Rotate.eshithle(goal, o);
-                    omayra=esanshil;
-                }
-                esanshil+=1;
-            }
-        }
-        catch(IOException e){
-            e.printStackTrace();
-        }
-        long mid=System.currentTimeMillis();
-        System.out.println(mid-start);
-        String cube="";
-        for(int i=0;i<goal.length;i++)
-            cube+=goal[i]+" ";
-        System.out.println("heura "+heur+" "+Heuristic.heuristic(goal, goall, next_cubait)+" "+omayra);
-        System.out.println(cube);*/
         reached.add(threshold);
         reachs.add(kups.get(0));
         while(!finn){
